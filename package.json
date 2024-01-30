@@ -1,0 +1,38 @@
+{
+  "name": "glitch-blank-react",
+  "version": "0.0.2",
+  "description": "A simple React app built with Vite and React.",
+  "main": "server.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "react": "^18.2.0",
+    "react-code-blocks": "^0.1.6",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/glitch-blank-react"
+  },
+  "glitch": {
+    "projectType": "generated_static"
+  }
+}
