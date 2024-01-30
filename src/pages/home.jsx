@@ -2,21 +2,24 @@ import * as React from "react";
 import { CopyBlock } from "react-code-blocks";
 
 export default function Home() {
-  const hello = "Hello React User-based Nav bar!";
+  const hello = "User-based Nav Demo";
 
   return (
     <>
       <h1 className="title">{hello}</h1>
       <p>
-        App passes a user role to nav component. If the agency changes, the user
-        role changes. The nav component passes that user role id value to the
+        App passes a user role to nav component. (Assumes that if the agency changes, the user
+        role changes). 
+      </p>
+      <p>
+        The nav component passes that user role id value to the
         api to return an array of menu items, and generates a nav bar from those
         items.
       </p>
-      <h2> 1. data returned from /login </h2>
-      <p>Of course the gui isn't using the /login endpoint (?) so need to make sure 
-      this data is available to it via webservices or other way
+      <h2> 1. gui has user data </h2>
+      <p>Initially I was assuming the gui could get access to the data returned from the /login endpoint:
       </p>
+ 
       <CopyBlock
         wrapLines={true}
         text="{
@@ -30,7 +33,11 @@ export default function Home() {
         }"
       />
       
-      <h2>2. pass that user_type.id for the selected agency to the api</h2>
+      <p>But I don't think the gui uses this endpoint so maybe it would be better for the api 
+        to accept a user id + agency id combo.
+      </p>
+      
+      <h2>2. pass that user_type.id or user id + agency id combo for the selected agency to the api</h2>
       
       <h2>3. get an array of menu items</h2>
       <CopyBlock
